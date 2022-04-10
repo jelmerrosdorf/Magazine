@@ -41,35 +41,35 @@ let gameDetails = [
     },
     {
         name: "God of War",
-        image: "./img/gow2.jpg",
+        image: "./img/gow.jpg",
         genre: "Action-adventure",
         developer: "Santa Monica Studio",
         tags: "kratos, ps4, windows"
     },
     {
         name: "Red Dead Redemption 2",
-        image: "./img/rdr22.jpg",
+        image: "./img/rdr2.jpg",
         genre: "Action-adventure",
         developer: "Rockstar Studios",
         tags: "arthur_morgan, ps4, xbox_one, windows"
     },
     {
         name: "Ratchet & Clank: Rift Apart",
-        image: "./img/rcra2.jpg",
+        image: "./img/rcra.jpg",
         genre: "Platform",
         developer: "Insomniac Games",
         tags: "ratchet, clank, ps5"
     },
     {
         name: "Overwatch",
-        image: "./img/ow2.jpg",
+        image: "./img/ow.jpg",
         genre: "FPS",
         developer: "Blizzard Entertainment",
         tags: "tracer, windows, ps4, xbox_one, switch"
     },
     {
         name: "Ghost of Tsushima",
-        image: "./img/got2.jpg",
+        image: "./img/got.jpg",
         genre: "Action-adventure",
         developer: "Sucker Punch Productions",
         tags: "jin, ps4, ps5"
