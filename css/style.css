@@ -1,0 +1,141 @@
+/* Custom properties */
+
+:root {
+    --ff-primary: 'Inconsolata', monospace;
+    --ff-secondary: 'Mochiy Pop P One', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --fs-h1: 2rem;
+    --fs-body: 1rem;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-main: #7fffd4;
+    --clr-accent: #ffb6c1;
+    --clr-favorite: #f542da;
+}
+
+
+/* Styling */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-main);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-reg);
+}
+
+section {
+    padding: 1rem 1rem;
+}
+
+img {
+    display: block;
+    max-width: 50%;
+    margin: auto;
+}
+
+strong {
+    font-weight: var(--fw-bold);
+}
+
+.header {
+    background-color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h1);
+    padding-left: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.gameCard {
+    border: 2px solid var(--clr-dark);
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--clr-accent);
+    text-align: center;
+}
+
+.detail {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: 5;
+    grid-column-end: 5;
+    padding-left: 1rem;
+    background-color: var(--clr-accent);
+    border: 2px solid var(--clr-dark);
+    max-width: 350px;
+}
+
+.collectBtn,
+.detailBtn {
+    background-color: var(--clr-light);
+    padding: 1rem;
+    margin: 10px auto;
+    border-radius: 25px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-weight: var(--fw-bold);
+}
+
+
+.collected {
+    background-color: var(--clr-favorite);
+}
+
+
+/* Media queries */
+
+@media (max-width: 1250px)
+{
+    .detail {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 1;
+        grid-column-end: 1;
+        min-width: 300px;
+    }
+
+    .grid-container {
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+    .gameCard {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 1750px)
+{
+    .detail {
+        grid-row-start: 1;
+        grid-column-start: 5;
+        grid-row-end: 5;
+        grid-column-end: 7;
+    }
+}
+
+
+
+
+
+
+
